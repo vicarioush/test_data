@@ -1,0 +1,41 @@
+FileLocation : <URL> or <Server_Location> File data has to be related to vcf/gvcf/bam/fastq or corresponding index files.
+#FileType : VCF,VCF INDEX,gVCF,gVCF INDEX,BAM,BAM INDEX,CRAM,CRAM INDEX,FASTQ,FASTQ F,FASTQ R <only these types are allowed>
+#Description : Additional details to describe the entry.
+#AssemblyType/ReferenceBuild : hg19/hg38/GRCh37/GRCh38 <only these 5 values are allowed> na is allowed only if the FileType belongs to FASTQ,FASTQ F,FASTQ R
+#SampleLocalID: DNA number. Remark : In this release we support only 1 Unique sample local ID for an Individual<String>
+#IndLocalID: Semi anonymous ID<String>
+#SampleType:Research/Diagnostics <only these 2 types allowed>
+#SequenceMachine:Provide test if you are not sure of the sequence machine <String>
+#SeqKitModel:Provide testModel if you are not sure of the sequence kit model <check the model mentioned in UI>
+#SequencingCoverage: <integer>
+#SequenceType:WES/WGS/PANEL <only these 3 types allowed/not case-sensitive>
+#ReadLength: <Numeric>
+#DateOfSequencing:<YYYY/MM/DD> <Date_Validation>
+#PanelTypeName : Panel name has to be provided if Sequence Type is Panel<only these types are allowed>
+#IndividualGender:Male/Female/Unknown
+#########################################################################################################################################################
+# Optional Fields are listed below : 
+#IndividualFName:First Name of Individual <char>
+#IndividualLName:Last Name of Individual <char>
+#IndividualBirthDate: <YYYY/MM/DD> <Date_Validation>
+##########################################################################################################################################################
+#Example Entry : TestPI,/datafiles/genomes/sample_name-12378.vcf.gz,vcf,sample description,hg19,deafness_lab2,christo_lab1,Research,test,testModel,40,WGS,39,2012/03/12,,,,Female,
+###############################
+#PIName,FileLocation,FileType,Description,AssemblyType,SampleLocalID,IndLocalID,SampleType,SequenceMachine,SeqKitModel,SequencingCoverage,SequenceType,ReadLength,DateOfSequencing,PanelTypeName,IndividualFName,IndividualLName,IndividualGender,IndividualBirthDate
+#Please enter the values below in csv format
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00103.vcf.gz,SV_VCF,Genome public samples,hg38,HG00103,SV_HG00103,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00106.vcf.gz,SV_VCF,Genome public samples,hg38,HG00106,SV_HG00106,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00107.vcf.gz,SV_VCF,Genome public samples,hg38,HG00107,SV_HG00107,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00111.vcf.gz,SV_VCF,Genome public samples,hg38,HG00111,SV_HG00111,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00114.vcf.gz,SV_VCF,Genome public samples,hg38,HG00114,SV_HG00114,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00117.vcf.gz,SV_VCF,Genome public samples,hg38,HG00117,SV_HG00117,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00120.vcf.gz,SV_VCF,Genome public samples,hg38,HG00120,SV_HG00120,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00123.vcf.gz,SV_VCF,Genome public samples,hg38,HG00123,SV_HG00123,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00124.vcf.gz,SV_VCF,Genome public samples,hg38,HG00124,SV_HG00124,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00125.vcf.gz,SV_VCF,Genome public samples,hg38,HG00125,SV_HG00125,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00128.vcf.gz,SV_VCF,Genome public samples,hg38,HG00128,SV_HG00128,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00129.vcf.gz,SV_VCF,Genome public samples,hg38,HG00129,SV_HG00129,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00130.vcf.gz,SV_VCF,Genome public samples,hg38,HG00130,SV_HG00130,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00131.vcf.gz,SV_VCF,Genome public samples,hg38,HG00131,SV_HG00131,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+Geert Vandeweyer,/public_genomes/sv_1000G/all.sniffles.hg38.1kGP.ont.7Aug2023.HG00133.vcf.gz,SV_VCF,Genome public samples,hg38,HG00133,SV_HG00133,Research,ONT,testModel,30,WGS,25000,2024/03/28,,fname,lname,Unknown,
+
